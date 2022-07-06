@@ -10,9 +10,15 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
+  public colorStripe: boolean = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public useColorStripe(){
+	this.colorStripe = !this.colorStripe;
+	return this.colorStripe;
   }
 
 	sort(column: string): void {

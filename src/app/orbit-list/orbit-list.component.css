@@ -31,12 +31,12 @@ th, td {
 	padding: 6px;
 }
 
-.info-row {
+.data-row {
 	background:rgb(182, 192, 206);
 	color:rgb(100, 238, 8);
 }
 
-.info-row2 {
+.data-row2 {
 	background:rgb(100, 238, 8);
 	color:rgb(182, 192, 206);
 }

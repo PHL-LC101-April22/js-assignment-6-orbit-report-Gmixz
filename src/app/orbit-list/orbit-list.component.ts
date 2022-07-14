@@ -16,10 +16,10 @@ export class OrbitListComponent implements OnInit {
   ngOnInit() {
   }
 
-  public useColorStripe(){
-	this.colorStripe = !this.colorStripe;
-	return this.colorStripe;
-  }
+//   public useColorStripe(){
+// 	this.colorStripe = !this.colorStripe;
+// 	return this.colorStripe;
+//   }
 
 	sort(column: string): void {
 		// array.sort modifies the array, sorting the items based on the given compare function

@@ -7,9 +7,11 @@
         <th>Launch Date</th>
     </tr>
 
-    <tr *ngFor="let satellite of satellites" [ngClass]="{'rowColor': useColorStripe()}" class="data-row">
+    <!-- <tr *ngFor="let satellite of satellites" [ngClass]="{'rowColor': useColorStripe()}" class="data-row"> -->
+        <tr class="info-row" [class.info-row2]="this.satellites.indexOf(satellite)%2 === 0" *ngFor = "let satellite of satellites">
         <td>{{satellite.name}}</td>
-        <td [ngClass]="{'warning' : satellite.isSpaceDebris()}">{{satellite.type}}</td>
+        <!-- <td [ngClass]="{'warning' : satellite.isSpaceDebris()}">{{satellite.type}}</td> -->
+        <td [class.warning] = "satellite.isSpaceDebris()">{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>

@@ -14,10 +14,14 @@ export class Satellite {
 		this.operational = operational;
    }
 	
+	// isSpaceDebris(): boolean {
+	// 	return this.type === 'Space Debris';
 	isSpaceDebris(): boolean {
-		return true;
-   }
-
+		if (this.type === 'Space Debris') 
+		{
+			return true;
+		}
+			return false;	
+	}
 }
-
 // TODO 3a: fix isSpaceDebris check
